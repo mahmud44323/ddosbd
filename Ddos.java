@@ -71,7 +71,8 @@ public class Dos implements Runnable {
         System.out.print("Thread: ");
         String amount = in.nextLine();
 
-        if (amount == null  amount.equals(null)  amount.equals("")) {
+        if (amount == null || amount.equals(null) || amount.equals("")) {
+
             Dos.amount = 2000;
         } else {
             Dos.amount = Integer.parseInt(amount);
